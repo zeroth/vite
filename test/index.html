@@ -1,0 +1,16 @@
+
+h1. Welcome to my site
+
+
+<ul>
+  {% for page in site.pages %}
+    <li>{{ page.date }} <a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<div id="first_post">
+  <div>
+    {{ site.pages[0].title}}
+    {{ site.pages[0].content}}
+  </div>
+</div>
